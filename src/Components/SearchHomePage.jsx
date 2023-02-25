@@ -4,10 +4,9 @@ import { Row } from "react-bootstrap";
 
 const SearchPageHome = (propsQuery) => {
   const [albumHome, setAlbumHome] = useState();
-  const query = propsQuery.toString();
-  console.log(query);
+
   const url =
-    "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + query;
+    "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + propsQuery;
 
   const fetchSearch = async () => {
     try {

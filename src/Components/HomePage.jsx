@@ -17,7 +17,7 @@ const HomePage = () => {
             <div id="rock">
               <h2>Rock Classic</h2>
               <div id="rockSection">
-                <SearchPageHome propsQuery={"rockclassic"} />
+                <SearchPageHome propsQuery="rockclassic" />
               </div>
             </div>
           </div>
@@ -26,10 +26,9 @@ const HomePage = () => {
           <div className="col-10">
             <div id="pop">
               <h2>Pop Culture</h2>
-              <div
-                className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
-                id="popSection"
-              ></div>
+              <div className="" id="popSection">
+                <SearchPageHome propsQuery="POP" />
+              </div>
             </div>
           </div>
         </div>
@@ -37,10 +36,9 @@ const HomePage = () => {
           <div className="col-10">
             <div id="hiphop">
               <h2>HipHop</h2>
-              <div
-                className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
-                id="hipHopSection"
-              ></div>
+              <div id="hipHopSection">
+                <SearchPageHome propsQuery="hiphop" />
+              </div>
             </div>
           </div>
         </div>
