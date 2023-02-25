@@ -1,3 +1,5 @@
+import SearchPageHome from "./SearchHomePage";
+
 const HomePage = () => {
   return (
     <>
@@ -14,10 +16,9 @@ const HomePage = () => {
           <div className="col-10">
             <div id="rock">
               <h2>Rock Classic</h2>
-              <div
-                className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
-                id="rockSection"
-              ></div>
+              <div id="rockSection">
+                <SearchPageHome propsQuery={"rockclassic"} />
+              </div>
             </div>
           </div>
         </div>

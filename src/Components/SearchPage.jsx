@@ -43,10 +43,10 @@ const SearchPage = () => {
       <Row className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3">
         {searchQuery.allAlbum[0] &&
           searchQuery.allAlbum[0].map((e) => (
-            <Col>
-              <div class="col text-center" id={e.id}>
+            <Col key={e.id}>
+              <div className="col text-center">
                 {/* <a href="/album_page.html?id=${songInfo.album.id}"> mettici link to */}
-                <img class="img-fluid" src={e.artist.picture} alt="1" />
+                <img className="img-fluid" src={e.artist.picture} alt="1" />
                 {/* </a> */}
                 <p>
                   <p className="text-white">{e.artist.name}</p>
